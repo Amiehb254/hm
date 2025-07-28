@@ -29,10 +29,16 @@
       font-size: 18px;
       border-radius: 5px;
       cursor: pointer;
-      transition: background 0.3s ease;
+      transition: background 0.3s ease, transform 0.2s ease;
     }
     button:hover {
       background: #388e3c;
+      transform: scale(1.05);
+    }
+    .trust-note {
+      font-size: 14px;
+      color: #aaa;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -40,10 +46,13 @@
   <h1>Verify You Are Human</h1>
   <p>Click the button below to confirm you're not a robot and continue.</p>
   <button id="verifyBtn">I am Human</button>
+  <p class="trust-note">
+    We respect your privacy. This verification is to protect you from bots and spam.
+  </p>
 
   <script>
     document.getElementById('verifyBtn').addEventListener('click', function() {
-      // Redirect to your offer URL here:
+      // Replace the URL below with your actual Amazon affiliate link
       window.location.href = 'https://amzn.to/3H4doBR';
     });
   </script>
